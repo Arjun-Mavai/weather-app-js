@@ -178,16 +178,7 @@ class="w-icon"
   <p>Weather: </p>
   <p>${weatherData.weather[0].description}</p>
   </div>
-  <div class='tem'>
-  <p>Humidity:</p>
-  <p>${weatherData.main.humidity}%</p>
-  </div>
-  <div class='tem'>
-  <p>Wind Speed: </p>
-  <p>${weatherData.wind.speed} m/s</p>
-  </div>
-
-
+   
 
    
   </div>

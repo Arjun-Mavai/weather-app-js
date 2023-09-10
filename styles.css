@@ -19,15 +19,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 12px;
 }
 .search{ 
 
     padding: 10px; /* Add padding for spacing */
     border: none;
     outline: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 15px; /* Rounded corners */
     /* outline: none; Remove default input outline */
     transition: border-color 0.3s; /* Smooth border color transition */
+    width: 300px;
+     
 }
 
 /* Styles for the search button */
@@ -146,12 +149,17 @@ body{
 
 .s-w-data{
      
-    flex-direction: column;
+    
     background: rgba(11, 11, 11, 1);
     padding:20px;
     border-radius: 10px;
     margin: 10px 0;
     border: 1px solid #eee;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
      
 }
 
@@ -245,13 +253,14 @@ body{
 @media only screen and  (max-width:730px){
     
     .container{
-        padding: 20px;
+        padding: 10px;
     }
     
     .future-forecast{
         justify-content: start;
         align-items: none;
         overflow-y: scroll;
+        z-index: 2;
     }
 
     .future-forecast .today .temp{
@@ -264,6 +273,7 @@ body{
 
     .date-container #am-pm{
         font-size: 20px;
+       
     }
 
     .date-container .date{
@@ -291,11 +301,12 @@ body{
     }
 
     .s-w-data{
-     
- margin-top: 10px;
- width: fit-content;
- height: fit-content;
+        position: relative;
+        z-index: 5;
          
+     
+  
+   
     }
 
     .search{
@@ -305,10 +316,11 @@ body{
         letter-spacing: 0.1rem;
         margin-bottom: 12px ;
         margin-top: 12px;
+        width: 250px;
     }
 
     .search-container{
-        display: flex;
+         
        gap: 12px;
     }
 
@@ -320,6 +332,8 @@ body{
        font-weight: 600;
        
     }
+
+     
     
 
 }
