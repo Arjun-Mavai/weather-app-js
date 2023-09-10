@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather-App</title>
+    <title>🌞Weather-App🌈</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -17,23 +17,37 @@
               <!-- days[day] date months[month] -->
             </div>
             <div class="others" id="current-weather-items">
+
+                <div class="weather-item">
+  <div>Temperature🌤</div>
+  <div>34.2&#176; C</div>
+</div>
               <div class="weather-items">
-                <div>Humidity</div>
+                <div>Humidity☔</div>
                 <div>95.2%</div>
               </div>
               <div class="weather-items">
-                <div>Pressure</div>
+                <div>Pressure🌪</div>
                 <div>95.2%</div>
               </div>
               <div class="weather-items">
-                <div>Wind Speed</div>
+                <div>Wind Speed 🌬</div>
                 <div>95.2%</div>
               </div>
             </div>
           </div>
+
+           <div class="search-container">
+            <input type="text" id="inputQuery" class="search" placeholder="Enter your city..">
+            <button class="btn" id="searchBtn">Search</button>
+           </div>
+           <div id="searched-data"></div>
+
+
+
           <div class="place-container">
-            <div class="time-zone" id="time-zone">Asia/Kolkata</div>
-            <div class="country" id="country">IN</div>
+            <div class="time-zone" id="time-zone">Arjun</div>
+            <div class="country" id="country"></div>
           </div>
         </div>
       </div>
@@ -111,8 +125,11 @@
           </div>
         </div>
       </div>
+      
     </main>
 
     <script src="script.js"></script>
   </body>
 </html>
+
+

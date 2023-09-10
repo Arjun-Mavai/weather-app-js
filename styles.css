@@ -7,12 +7,82 @@
 }
 
 body{
-   background: url('lw.jpg');
+   background: url('wea.jpg');
      background-repeat: no-repeat;
     background-size:cover;
     overflow:hidden;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{ 
+
+    padding: 10px; /* Add padding for spacing */
+    border: none;
+    outline: none;
+    border-radius: 5px; /* Rounded corners */
+    /* outline: none; Remove default input outline */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+/* Styles for the search button */
+.btn {
+    padding: 10px 20px; /* Add padding for spacing */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    background: #007BFF; /* Button background color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    outline: none; /* Remove outline on click */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    transition: 0.5s; /* Smooth transition for animation */
+  }
+  
+  /* ::before pseudo-element for button animation */
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; /* Initial width is 0, making it invisible */
+    height: 100%;
+    background-color: #ffffff; /* Change this color to your desired fill color */
+    z-index: -1;
+    transition: 0.5s; /* Smooth transition for animation */
+  }
+  
+  /* Button hover styles */
+  .btn:hover {
+    color: black; /* Text color changes on hover */
+  }
+  
+  /* Button hover animation */
+  .btn:hover::before {
+    width: 100%; /* Width gradually increases on hover, creating a fill effect */
+  }
+  
+
+
+
+
+
+.w-icon{
+    height: 60px;
+    width: 60px;
+   
 }
 
 .container{
@@ -72,6 +142,29 @@ body{
     border-radius: 10px;
     margin: 10px 0;
     border: 1px solid #eee;
+}
+
+.s-w-data{
+     
+    flex-direction: column;
+    background: rgba(11, 11, 11, 1);
+    padding:20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+     
+}
+
+
+
+
+
+
+
+
+.tem{
+    display: flex;
+    justify-content: space-between;
 }
 
 .current-info .others .weather-item{
@@ -193,6 +286,41 @@ body{
     .current-info .others .weather-item{
         font-size: 14px;
     }
+    #searched-data{
+        color:#eee;
+    }
+
+    .s-w-data{
+     
+ margin-top: 10px;
+ width: fit-content;
+ height: fit-content;
+         
+    }
+
+    .search{
+        border-radius: 12px;
+        
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        margin-bottom: 12px ;
+        margin-top: 12px;
+    }
+
+    .search-container{
+        display: flex;
+       gap: 12px;
+    }
+
+    .place-container div{
+        position: absolute;
+       top: 0;
+       right: 0;
+       color:white;
+       font-weight: 600;
+       
+    }
+    
 
 }
 
