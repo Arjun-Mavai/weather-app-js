@@ -153,7 +153,7 @@ searchBtn.addEventListener("click", () => {
     .then((res) => res.json())
     .then((data) => {
       displayWeatherData(data);
-      searchQuery.value = "";
+      sQuery.value = "";
     })
     .catch((error) => console.log(`Error fetching the data : ${error}`));
 });
